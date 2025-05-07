@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Atividade 8</h1>
+    <section>
+      <h2>1. Maior de três números</h2>
+      <div class="input-group">
+        <input type="number" id="n1" placeholder="N1">
+        <input type="number" id="n2" placeholder="N2">
+        <input type="number" id="n3" placeholder="N3">
+      </div>
+      <button onclick="mostrarMaior()">Ver maior</button>
+      <p id="resultadoMaior"></p>
+    </section>
+    <section>
+      <h2>2. Números em ordem crescente</h2>
+      <button onclick="ordenarNumeros()">Ordenar</button>
+      <p id="resultadoOrdenado"></p>
+    </section>
+    <section>
+      <h2>3. Verificar Palíndromo</h2>
+      <input type="text" id="texto" placeholder="Digite texto ou frase">
+      <button onclick="verificarPalindromo()">Verificar</button>
+      <p id="resultadoPalindromo"></p>
+    </section>
+    <section>
+      <h2>4. Média dos três números</h2>
+      <button onclick="calcularMedia()">Calcular Média</button>
+      <p id="resultadoMedia"></p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
