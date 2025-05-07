@@ -1,12 +1,14 @@
-function ex1() {
-  let numeros = document.getElementById("nums").value.split(",");
+function ex1(numeros) {
+  if (numeros.length !== 3) {
+    return "O array deve conter exatamente 3 números.";
+  }
   let n1 = parseFloat(numeros[0]);
   let n2 = parseFloat(numeros[1]);
   let n3 = parseFloat(numeros[2]);
   let soma = n1 + n2 + n3;
   let qn1 = n1 * n1;
   let qn2 = n2 * n2;
-  document.getElementById("res1").textContent = "A soma dos 3 números é " + soma + ", O quadrado do primeiro é " + qn1 + ", O quadrado do segundo é " + qn2;
+  return `A soma dos 3 números é ${soma}, O quadrado do primeiro é ${qn1}, O quadrado do segundo é ${qn2}`;
 }
 function ex2() {
   let letras = document.getElementById("letras").value.toUpperCase().split(",");
