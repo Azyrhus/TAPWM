@@ -1,30 +1,23 @@
-function ex1(numeros) {
-  if (numeros.length !== 3) {
-    return "O array deve conter exatamente 3 números.";
-  }
-  let n1 = parseFloat(numeros[0]);
-  let n2 = parseFloat(numeros[1]);
-  let n3 = parseFloat(numeros[2]);
-  let soma = n1 + n2 + n3;
-  let qn1 = n1 * n1;
-  let qn2 = n2 * n2;
-  return `A soma dos 3 números é ${soma}, O quadrado do primeiro é ${qn1}, O quadrado do segundo é ${qn2}`;
+function exercicio1() {
+  const entrada = document.getElementById("numeros").value;
+  const arr = entrada.split(",").map(Number);
+  const soma = arr.reduce((a, b) => a + b);
+  const quadradoPrimeiro = arr[0] ** 2;
+  const quadradoSegundo = arr[1] ** 2;
+
+  return document.getElementById("resultado1").innerText =
+    `A soma dos três números é: ${soma}, o quadrado do primeiro é: ${quadradoPrimeiro} e o quadrado do segundo é: ${quadradoSegundo}`;
 }
-function ex2() {
-  let letras = document.getElementById("letras").value.toUpperCase().split(",");
-  let palavras = [];
-  function gerarPalavra(usadas, palavra) {
-    if (palavra.length === 5) {
-      palavras.push(palavra);
-      return;
+function exercicio2() {
+  const entrada = document.getElementById("letras").value;
+  const letras = entrada.split(",");
+  const palavras = [];
+  for (let i = 0; i < 10; i++) {
+    let palavra = '';
+    for (let j = 0; j < 5; j++) {
+      palavra += letras[Math.floor(Math.random() * letras.length)];
     }
-    for (let i = 0; i < usadas.length; i++) {
-      let nova = usadas.slice();
-      nova.splice(i, 1);
-      gerarPalavra(nova, palavra + usadas[i]);
-      if (palavras.length >= 10) return;
-    }
+    palavras.push(palavra);
   }
-  gerarPalavra(letras, "");
-  document.getElementById("res2").textContent = palavras.join(", ");
+  return document.getElementById("resultado2").innerText = palavras.join(", ");
 }
