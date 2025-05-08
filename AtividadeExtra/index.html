@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Atividade Extra</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Atividade Extra</h1>
-  <h2>Exercício 1</h2>
-  <input id="nums" placeholder="2,4,6" />
-  <button onclick="ex1()">Executar</button>
-  <p id="res1"></p>
-  <h2>Exercício 2</h2>
-  <input id="letras" placeholder="A,B,C,D,E" />
-  <button onclick="ex2()">Executar</button>
-  <p id="res2"></p>
+  <div class="box">
+    <h2>Exercício 1</h2>
+    <input type="text" id="numeros" placeholder="Digite 3 números separados por vírgula" />
+    <button onclick="exercicio1()">Executar</button>
+    <p id="resultado1"></p>
+  </div>
+  <div class="box">
+    <h2>Exercício 2</h2>
+    <input type="text" id="letras" placeholder="Digite 5 letras separadas por vírgula" />
+    <button onclick="exercicio2()">Executar</button>
+    <p id="resultado2"></p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
