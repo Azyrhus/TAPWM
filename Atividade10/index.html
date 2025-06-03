@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+
+        <form id="formFuncionario">
+            <label>Matrícula</label>
+            <input type="text" id="matricula" required>
+
+            <label>Nome</label>
+            <input type="text" id="nome" required>
+
+            <label>Função</label>
+            <input type="text" id="funcao" required>
+
+            <button type="submit">Adicionar Funcionário</button>
+        </form>
+
+        <h2>Funcionários Cadastrados</h2>
+        <div id="listaFuncionarios"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
