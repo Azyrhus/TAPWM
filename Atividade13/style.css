@@ -1,0 +1,10 @@
+:root{--laranja:#ff7a00;--cinza:#f2f2f2;--branco:#ffffff}
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:var(--cinza);display:grid;place-items:center;min-height:100vh}
+.card{background:var(--branco);width:min(560px,92%);padding:20px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.08);border:1px solid #e5e7eb}
+label{display:block;font-weight:600;color:#1f2937;margin-bottom:8px}
+input[type=text]{width:100%;padding:12px 14px;border:2px solid #e5e7eb;border-radius:12px;outline:0;transition:border-color .2s,box-shadow .2s}
+input[type=text]:focus{border-color:var(--laranja);box-shadow:0 0 0 3px rgba(255,122,0,.15)}
+.ops{display:flex;gap:16px;margin-top:14px;align-items:center}
+.ops label{display:flex;gap:8px;align-items:center;font-weight:500;color:#374151;margin:0}
+input[type=radio]{accent-color:var(--laranja)}

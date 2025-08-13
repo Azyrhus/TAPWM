@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transformador de Texto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+<label for="meuTexto">Texto</label>
+<input id="meuTexto" type="text" placeholder="Digite aqui" oninput="transformarTexto()">
+<div class="ops">
+<label><input type="radio" id="maiuscula" name="modo" onchange="transformarTexto()">Maiúsculas</label>
+<label><input type="radio" id="minuscula" name="modo" onchange="transformarTexto()">Minúsculas</label>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
